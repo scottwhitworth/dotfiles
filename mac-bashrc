@@ -1,0 +1,27 @@
+alias ls='ls -G' # color on ls
+alias tmux='tmux -2' # force tmux into 256 colors
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+OLDPATH=$PATH
+PATH="$HOME/local/bin:$PATH"
+MANPATH=`manpath`
+for i in $HOME/local/*; do
+    [ -d $i/bin ] && PATH="$i/bin:$PATH"
+    [ -d $i/sbin ] && PATH="$i/sbin:$PATH"
+    #[ -d $i/include ] && CPATH="$i/include:$CPATH"    
+    [ -d $i/lib ] && LD_LIBRARY_PATH="$i/lib:$LD_LIBRARY_PATH"
+    [ -d $i/lib/pkgconfig ] && PKG_CONFIG_PATH="$i/lib/pkgconfig:$PKG_CONFIG_PATH"
+    [ -d $i/share/man ] && MANPATH="$i/share/man:$MANPATH"
+done
+
+# node.js version manager
+source ~/.nvm/nvm.sh
+
+# Setup Go stuff
+export GOPATH="$HOME/gocode"
+PATH="/usr/local/go/bin:$PATH"
+PATH="$GOPATH/bin:$PATH"
