@@ -18,3 +18,7 @@
 :bufdo :e!
   - bufdo do over each buffer
   - e[dit]! start all over again
+
+# Show cursor position and filename
+CTRL-g or g CTRL-g
+or `set ruler`
