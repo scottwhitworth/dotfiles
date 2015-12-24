@@ -1,3 +1,5 @@
 [user]
 	email = scott@scottwhitworth.com
 	name = Scott Whitworth
+[push]
+	default = simple
