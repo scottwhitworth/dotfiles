@@ -1,5 +1,5 @@
 OPTIONS=color
-OPTIONS=menucolor
+OPTIONS=menucolors
 OPTIONS=msg_window:c
 OPTIONS=hilite_pet
 OPTIONS=lit_corridor
