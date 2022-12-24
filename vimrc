@@ -4,7 +4,7 @@ packadd! vim-javascript
 packadd! vim-go
 
 map <silent> <F2> :Lexplore<CR>
-map <silent> <F3> :set nonumber!<CR>
+map <silent> <F3> :set number! relativenumber!<CR>
 map <silent> <F4> :syntax sync minlines=50<CR>
 imap cll console.log()<Left>
 nnoremap <silent> <C-d> <C-d>zz<CR>
