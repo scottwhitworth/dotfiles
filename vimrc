@@ -13,6 +13,8 @@ nnoremap <silent> <C-u> <C-u>zz<CR>
 set autoindent
 filetype plugin indent on
 
+syntax enable
+
 set laststatus=2 " always show the status line
 set dir=/tmp
 set backupdir=/tmp
