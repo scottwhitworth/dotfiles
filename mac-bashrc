@@ -22,6 +22,6 @@ done
 source ~/.nvm/nvm.sh
 
 # Setup Go stuff
-export GOPATH="$HOME/gocode"
+export GOPATH="$HOME/go"
 PATH="/usr/local/go/bin:$PATH"
 PATH="$GOPATH/bin:$PATH"

@@ -1,5 +1,11 @@
 [user]
-	email = scott@scottwhitworth.com
 	name = Scott Whitworth
+	email = scott@scottwhitworth.com
+[init]
+	defaultBranch = main
 [push]
 	default = simple
+[core]
+	editor = vim
+[fetch]
+	prune = true
