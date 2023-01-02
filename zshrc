@@ -6,3 +6,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 alias glog="git log --oneline --decorate --graph"
+alias gloga="git log --oneline --decorate --graph --all"
