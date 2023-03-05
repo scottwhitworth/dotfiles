@@ -5,7 +5,7 @@ OPTIONS=hilite_pet
 OPTIONS=lit_corridor
 OPTIONS=DECgraphics
 OPTIONS=showrace
-OPTIONS=autopickup,pickup_types:$?!/=
+OPTIONS=autopickup,pickup_types:$?!/="+
 OPTIONS=disclose:+i+a+g+c+v
 OPTIONS=showexp,showscore,time
 OPTIONS=boulder:0

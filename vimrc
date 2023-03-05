@@ -12,14 +12,20 @@ let mapleader=" "
 map <silent> <F2> :Lexplore<CR>
 map <silent> <F3> :set number! relativenumber!<CR>
 map <silent> <F4> :syntax sync minlines=50<CR>
-imap cll console.log()<Left>
 nnoremap <silent> <C-d> <C-d>zz<CR>
 nnoremap <silent> <C-u> <C-u>zz<CR>
 nnoremap <leader>tn :tabnew<CR>
 nnoremap <leader>tc :tabclose<CR>
 
+" iabbrev in after/ftplugin (abbreviations)
+
 set autoindent
 filetype plugin indent on
+
+" regexpengine to automatic selection
+" after/ftplugin can override to help with syntax highlighting
+" setlocal regexpengine=2
+set regexpengine=0
 
 syntax enable
 
@@ -70,3 +76,4 @@ nnoremap <leader>lh :LspHover<CR>
 nnoremap <leader>hl :LspHighlight<CR>
 nnoremap <leader>hL :LspHighlightClear<CR>
 nnoremap <leader>lf :LspFormat<CR>
+nnoremap <leader>lF :LspFold<CR>
